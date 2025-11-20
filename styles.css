@@ -1,56 +1,98 @@
+/* ===== RESET / BASE ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f6f6f6;
+    background: #ffffff;
 }
 
-/* HEADER AREA */
-header {
-    background-color: #154734; /* CPP Green */
-    color: white;
-    padding: 10px 20px;
+/* =============================================== */
+/* ===== CPP ONE-ROW HEADER LIKE OFFICIAL CPP ===== */
+/* =============================================== */
+
+.cpp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 35px;
+    border-bottom: 1px solid #ddd;
 }
 
-.logo-area {
+
+.header-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-.logo {
-    width: 55px;
+.cpp-logo {
+    height: 50px; 
 }
 
-/* NAVIGATION BAR */
+.cpp-wordmark {
+    font-size: 32px;
+    font-weight: 700;
+    color: #154734;
+    font-family: Georgia, serif; 
+    letter-spacing: 0.5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #154734;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-right a:hover {
+    color: #00703c;
+}
+
+.header-right .icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #154734;
+}
+
 .navbar {
-    margin-top: 15px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
 }
 
 .menu {
+    display: flex;
     list-style: none;
+    justify-content: center;
+    gap: 40px;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 25px;
 }
+
+.menu a {
+    color: #154734;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 5px;
+}
+
+.menu a:hover {
+    color: #00703c;
+}
+
 
 .menu > li {
     position: relative;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 5px;
-    display: block;
-}
-
-.menu a:hover {
-    color: #FFC72C; /* CPP Gold */
-}
-
-/* DROPDOWN MENUS */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -59,7 +101,7 @@ header {
     border-radius: 4px;
     padding: 0;
     margin: 0;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 10;
 }
 
@@ -70,6 +112,7 @@ header {
 .dropdown-menu li a {
     color: #154734;
     padding: 10px;
+    display: block;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -80,16 +123,15 @@ header {
     background: #e6e6e6;
 }
 
-/* HERO SECTION */
 .hero {
-    padding: 60px;
+    padding: 70px 20px;
     background: #FFC72C;
     color: #154734;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .hero p {
