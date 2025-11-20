@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+}
+
+/* HEADER AREA */
+header {
+    background-color: #154734; /* CPP Green */
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 55px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    margin-top: 15px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 5px;
+    display: block;
+}
+
+.menu a:hover {
+    color: #FFC72C; /* CPP Gold */
+}
+
+/* DROPDOWN MENUS */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 220px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    color: #154734;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: #e6e6e6;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 60px;
+    background: #FFC72C;
+    color: #154734;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
