@@ -451,4 +451,19 @@ body {
         text-decoration: underline;
     }
 
+    .resource-list li {
+        margin-bottom: 0.75rem;
+    }
+
+    resource-link {
+        font-size: 17px;
+        font-weight: 600;
+        color: #154734;
+        text-decoration: none;
+    }
+
+    .resource-link:hover {
+        text-decoration: underline;
+    }
+
 }
