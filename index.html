@@ -9,76 +9,148 @@
 
 <body>
 
-    <header class="cpp-header">
-        <div class="header-left">
-            <img src="cpp-logo.png" alt="CPP Logo" class="cpp-logo">
-            <span class="cpp-wordmark">Cal Poly Pomona</span>
-        </div>
+    <!-- ===== CPP TOP HEADER (WORDMARK + UTILITY LINKS) ===== -->
+<!-- ===================== TOP CPP HEADER ===================== -->
+<header class="cpp-topbar">
+    <div class="cpp-left">
+        <img src="cpp-logo.png" alt="CPP Logo" class="cpp-logo">
+        <span class="cpp-wordmark">Cal Poly Pomona</span>
+    </div>
 
-        <div class="header-right">
-            <a href="#">APPLY</a>
-            <a href="#">VISIT</a>
-            <a href="#">INFO</a>
-            <a href="#">GIVE</a>
-            <a href="#">MYCPP</a>
-            <span class="icon">🔍</span>
-            <span class="icon">☰</span>
-        </div>
-    </header>
+    <div class="cpp-right">
+        <a href="#">APPLY</a>
+        <a href="#">VISIT</a>
+        <a href="#">INFO</a>
+        <a href="#">GIVE</a>
+        <a href="#">MYCPP</a>
+        <span class="icon">🔍</span>
+        <span class="icon">☰</span>
+    </div>
+</header>
 
-    
-    <nav class="navbar">
-        <ul class="menu">
+<!-- ===================== SECOND NAV ROW ===================== -->
+<nav class="cpp-nav">
+    <ul class="menu">
 
-            <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 
-            <li class="dropdown">
-                <a href="#">Undergraduate</a>
-                <ul class="dropdown-menu">
-                    <li><a href="program_overview.html">Program Overview</a></li>
-                    <li><a href="course_description.html">Course Descriptions</a></li>
-                    <li><a href="offerings.html">Planned Course Offerings</a></li>
-                    <li><a href="student_resources.html">Student Resources</a></li>
-                    <li><a href="minor_in_CS.html">Minor in CS</a></li>
-                    <li><a href="minor_data_science.html">Minor in Data Science</a></li>
-                </ul>
-            </li>
+        <!-- STUDENT FACILITIES / OPPORTUNITIES -->
+        <li class="dropdown">
+            <a href="#">Student Facilities/Opportunities ▼</a>
+            <ul class="dropdown-menu">
 
-            <li class="dropdown">
-                <a href="#">Graduate</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Program Information</a></li>
-                    <li><a href="#">Admission Requirements</a></li>
-                    <li><a href="#">Application Procedures</a></li>
-                    <li><a href="#">Graduate Course Descriptions</a></li>
-                    <li><a href="#">Graduate Resources</a></li>
-                    <li><a href="#">Recent Master’s Projects</a></li>
-                    <li><a href="#">Faculty Research & Interests</a></li>
-                </ul>
-            </li>
+                <li class="dropdown-sub">
+                    <a href="#">Student Labs ▶</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">Instructional Labs</a></li>
+                        <li><a href="#">Research Labs</a></li>
+                    </ul>
+                </li>
 
-            <li class="dropdown">
-                <a href="#">Opportunities</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Student Labs</a></li>
-                    <li><a href="#">Internships</a></li>
-                    <li><a href="#">Scholarships</a></li>
-                    <li><a href="#">Employment Opportunities</a></li>
-                    <li><a href="#">Research Opportunities</a></li>
-                </ul>
-            </li>
+                <li class="dropdown-sub">
+                    <a href="#">CS Internship </a>
+                </li>
 
-            <li class="dropdown">
-                <a href="#">Faculty & Staff</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Faculty Directory</a></li>
-                    <li><a href="#">Office Hours</a></li>
-                    <li><a href="#">Advising Information</a></li>
-                </ul>
-            </li>
+                <li class="dropdown-sub">
+                    <a href="#">Student Opportunities ▶</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">Employment Opportunities</a></li>
+                        <li><a href="#">Research Opportunities</a></li>
+                        <li><a href="#">Scholarship Opportunities</a></li>
+                    </ul>
+                </li>
 
-        </ul>
-    </nav>
+            </ul>
+        </li>
+
+        <!-- UNDERGRADUATE -->
+        <li class="dropdown">
+    <a href="#">Undergraduate ▼</a>
+
+    <ul class="dropdown-menu">
+
+        <!-- COURSE CATALOG -->
+        <li class="dropdown-sub">
+            <a href="#">Course Catalog ▶</a>
+            <ul class="dropdown-submenu">
+                <li><a href="#">CS Senior Project</a></li>
+                <li><a href="#">Planned Future Courses</a></li>
+                <li><a href="#">Course Descriptions</a></li>
+            </ul>
+        </li>
+
+        <!-- UNDERGRADUATE PROGRAMS -->
+        <li><a href="#">Undergraduate Programs</a></li>
+
+        <!-- STUDENT RESOURCES -->
+        <li><a href="student_resources.html">Student Resources</a></li>
+
+        <!-- MINORS -->
+        <li class="dropdown-sub">
+            <a href="#">Minors ▶</a>
+            <ul class="dropdown-submenu">
+                <li><a href="#">Minor in CS</a></li>
+                <li><a href="#">Minor in Data Science</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+
+
+        <!-- GRADUATE -->
+<li class="dropdown">
+    <a href="#">Graduate ▼</a>
+    <ul class="dropdown-menu">
+
+        <!-- Application -->
+        <li class="dropdown-sub">
+            <a href="#">Application ▶</a>
+            <ul class="dropdown-submenu">
+                <li><a href="#">Admission Requirements</a></li>
+                <li><a href="#">Application Procedures</a></li>
+            </ul>
+        </li>
+
+        <!-- Graduate Resources -->
+        <li><a href="#">Graduate Resources</a></li>
+
+        <!-- Course Catalog -->
+        <li class="dropdown-sub">
+            <a href="#">Course Catalog ▶</a>
+            <ul class="dropdown-submenu">
+                <li><a href="#">Planned Future Courses</a></li>
+                <li><a href="#">Course Descriptions</a></li>
+            </ul>
+        </li>
+
+        <!-- Recent Masters/Theses -->
+        <li class="dropdown-sub">
+            <a href="#">Recent Masters/Theses ▶</a>
+            <ul class="dropdown-submenu">
+                <li><a href="#">Course Descriptions</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+
+
+        <!-- FACULTY & STAFF -->
+        <li class="dropdown">
+            <a href="#">Faculty & Staff ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Lecturers</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Faculty Research & Awards</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+
+
 
    
 <section class="hero-image">
