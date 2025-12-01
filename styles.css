@@ -324,13 +324,10 @@ a {
     max-width: 900px;
     margin: 0 auto 30px auto;
     font-size: 28px;
-<<<<<<< HEAD
-=======
     color: #ffffff;
 }
 
 .white-title {
->>>>>>> 7da9dfe (final commit)
     color: #ffffff;
 }
 
@@ -435,17 +432,14 @@ a {
 .dropdown-submenu {
     top: 0;
     left: 100%;
-    margin-left: 2px; /* prevents accidental gaps */
+    margin-left: 2px; 
 }
 
-/* Increase hit area so user can move without losing hover */
 .dropdown-menu,
 .dropdown-submenu {
     padding: 8px 0;
 }
 
-/* ========================================================= */
-/* ====================== Undergraduate Sections ===================== */
     .page-container {
         max-width: 1100px;
         margin: 40px auto 20px auto;
@@ -563,5 +557,29 @@ a {
         color: #154734;
         text-decoration: none;
     }
+    /* ===== FORCE ALL NAV MENUS OPEN FOR PRESENTATION ===== */
+
+/* Show all first-level dropdowns */
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Show all second-level submenus */
+.dropdown-sub:hover .dropdown-submenu,
+.dropdown-sub .dropdown-submenu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Optional: make submenus stack downward instead of flying to the right */
+.dropdown-submenu {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+}
 
    
